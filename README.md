@@ -1,4 +1,8 @@
 AMCOM
+
+[![Build Status](https://travis-ci.org/DevJoseWeb/AMCOM.svg?branch=master)](https://travis-ci.org/DevJoseWeb/AMCOM)
+
+
 Requisitos
 Ler o arquivo CSV das cidades para a base de dados;
 Retornar somente as cidades que são capitais ordenadas por nome;
