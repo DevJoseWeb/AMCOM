@@ -14,14 +14,18 @@ Retornar a quantidade de registros total;
 Dentre todas as cidades, obter as duas cidades mais distantes uma da outra com base na localização (distância em KM em linha reta);
 O código fonte deve ser comitado no GitHub, por favor nos passe sua conta para acompanharmos.
 
+
 Solução
 Leitura e manutenção de cidades de um arquivo CSV feito com Java
+
 
 Versões
 JAVA Wildfly-Swarm [COMPLETO] : https://github.com/DevJoseWeb/AMCOM/tree/master/amcom-systems-jboss -
 
+
 Implementação
 Nesse projeto utilizei wildfly-Swarm para executar minha aplicação JavaEE com banco relacional PostgreSQL. Funcionalidades:
+
 
 Ler o arquivo CSV das cidades para a base de dados (/import-csv)
 Retornar somente as cidades que são capitais ordenadas por nome (capitals)
@@ -36,6 +40,8 @@ Retornar a quantidade de registro baseado em uma coluna. Não deve contar itens 
 Retornar a quantidade de registros total (/count-all)
 Instalação
 mvn wildfly-swarm:run
+
+
 Testes
 JAVA SpringBoot : https://github.com/DevJoseWeb/AMCOM/tree/master/amcom-systems-springboot
 
