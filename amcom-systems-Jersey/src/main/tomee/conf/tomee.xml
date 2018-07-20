@@ -1,0 +1,7 @@
+<tomee>
+    <!-- see src/main/webapp/WEB-INF/persistence.xml -->
+    <Resource id="demoDataSource" type="DataSource">
+        JdbcUrl = jdbc:hsqldb:mem:demo
+        LogSql = false
+    </Resource>
+</tomee>

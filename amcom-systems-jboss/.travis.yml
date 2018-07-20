@@ -1,0 +1,22 @@
+language: java
+sudo: required
+
+install:
+  - mvn install -DskipTests
+  - mvn package -DskipTests
+  - mvn wildfly-swarm:package
+
+after_success:
+  - zip amcom-systems.zip Dockerfile Dockerrun.aws.json target/cities-swarm.jar
+
+deploy:
+  skip_cleanup: true
+  provider: elasticbeanstalk
+  access_key_id: $AWS_ACCESS_KEY_ID
+  secret_access_key:
+    secure: $AWS_SECRET_KEY
+  region: "us-east-1"
+  app: "amcom"
+  env: "Amcom-env"
+  bucket_name: "elasticbeanstalk-us-east-1-553649883080"
+  zip_file: "amcom-systems.zip"

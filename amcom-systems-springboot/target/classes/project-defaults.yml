@@ -1,0 +1,8 @@
+swarm:
+  datasources:
+    data-sources:
+      citiesDS:
+        driver-name: mysql
+        connection-url: jdbc:mysql://amcom.amcom.us-east-1.rds.amazonaws.com:5432/cities
+        user-name: mysql
+        password: mysql
